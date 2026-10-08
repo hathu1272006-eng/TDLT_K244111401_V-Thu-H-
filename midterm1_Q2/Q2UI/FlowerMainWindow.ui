@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>569</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>569</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Thanh Than Flower Shop</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/q2_logo.png</normaloff>../images/q2_logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget{background:#fcf6f6;}</string>
+   </property>
+   <widget class="QFrame" name="headerFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>900</width>
+      <height>97</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#headerFrame{background:#fae4e4;border:none;}</string>
+    </property>
+    <widget class="QLabel" name="bouquetLabel">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>4</y>
+       <width>138</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="pixmap">
+      <pixmap>../images/q2_header_bouquet.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="wishLabel">
+     <property name="geometry">
+      <rect>
+       <x>727</x>
+       <y>4</y>
+       <width>146</width>
+       <height>85</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:transparent;</string>
+     </property>
+     <property name="pixmap">
+      <pixmap>../images/q2_header_wish.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="titleLabel">
+     <property name="geometry">
+      <rect>
+       <x>148</x>
+       <y>11</y>
+       <width>600</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Candara','Segoe UI','Source Sans 3',Arial;font-size:32px;font-weight:bold;color:#a1204c;background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Thanh Than Flower Shop</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="subtitleLabel">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>58</y>
+       <width>500</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#6a4650;background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>FRESH FLOWERS · SAME PRICE · SPECIAL FOR YOU</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="groupChoose">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>105</y>
+      <width>482</width>
+      <height>299</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#groupChoose{background:#fcf6f6;border:1px solid #ecbfc4;border-radius:7px;}</string>
+    </property>
+    <widget class="QLabel" name="chooseBand">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>480</width>
+       <height>37</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#chooseBand{background:#f9e1e4;border:none;border-top-left-radius:6px;border-top-right-radius:6px;padding-left:13px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:17px;font-weight:bold;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>1. Choose flowers and quantity</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dalatImage">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>55</y>
+       <width>88</width>
+       <height>88</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;background:transparent;</string>
+     </property>
+     <property name="pixmap">
+      <pixmap>../images/q2_dalat.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dalatName">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>70</y>
+       <width>165</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:16px;font-weight:bold;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Da Lat flowers</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dalatPrice">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>96</y>
+       <width>165</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#2b2937;</string>
+     </property>
+     <property name="text">
+      <string>Price: 100,000 VND</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dalatDiscount">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>118</y>
+       <width>165</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#a8112c;</string>
+     </property>
+     <property name="text">
+      <string>Discount: 15%</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dalatQtyLabel">
+     <property name="geometry">
+      <rect>
+       <x>296</x>
+       <y>81</y>
+       <width>70</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:15px;font-weight:normal;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Quantity:</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="dalatSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>368</x>
+       <y>76</y>
+       <width>92</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+    </widget>
+    <widget class="QFrame" name="divider1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>162</y>
+       <width>460</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#divider1{background:#d7d5d7;border:none;}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sapaImage">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>184</y>
+       <width>88</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;background:transparent;</string>
+     </property>
+     <property name="pixmap">
+      <pixmap>../images/q2_sapa.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sapaName">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>199</y>
+       <width>165</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:16px;font-weight:bold;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Sapa flowers</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sapaPrice">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>225</y>
+       <width>165</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#2b2937;</string>
+     </property>
+     <property name="text">
+      <string>Price: 100,000 VND</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sapaDiscount">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>247</y>
+       <width>165</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#2f7d32;</string>
+     </property>
+     <property name="text">
+      <string>No discount</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sapaQtyLabel">
+     <property name="geometry">
+      <rect>
+       <x>296</x>
+       <y>210</y>
+       <width>70</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:15px;font-weight:normal;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Quantity:</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="sapaSpinBox">
+     <property name="geometry">
+      <rect>
+       <x>368</x>
+       <y>205</y>
+       <width>92</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="groupOrder">
+    <property name="geometry">
+     <rect>
+      <x>512</x>
+      <y>105</y>
+      <width>370</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#groupOrder{background:#fcf6f6;border:1px solid #ecbfc4;border-radius:7px;}</string>
+    </property>
+    <widget class="QLabel" name="orderBand">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>368</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#orderBand{background:#f9e7e7;border:none;border-top-left-radius:6px;border-top-right-radius:6px;padding-left:13px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:17px;font-weight:bold;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>2. Current order</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="orderDalatLabel">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>42</y>
+       <width>160</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Da Lat flowers:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="orderDalatEdit">
+     <property name="geometry">
+      <rect>
+       <x>188</x>
+       <y>41</y>
+       <width>163</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{background:#f9f3f3;border:1px solid #e0dad8;border-radius:3px;padding:0 6px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>0 VND</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="orderSapaLabel">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>74</y>
+       <width>160</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Sapa flowers:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="orderSapaEdit">
+     <property name="geometry">
+      <rect>
+       <x>188</x>
+       <y>73</y>
+       <width>163</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{background:#f9f3f3;border:1px solid #e0dad8;border-radius:3px;padding:0 6px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>0 VND</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="divider2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>106</y>
+       <width>348</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#divider2{background:#e1b3b9;border:none;}</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="totalPayFrame">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>113</y>
+       <width>352</width>
+       <height>38</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#totalPayFrame{background:#f9dbde;border:1px solid #f3c4cc;border-radius:6px;}</string>
+     </property>
+     <widget class="QLabel" name="totalPayTitle">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>5</y>
+        <width>125</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:16px;font-weight:bold;color:#a3123f;background:transparent;border:none;</string>
+      </property>
+      <property name="text">
+       <string>Total payment:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totalPaymentLabel">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>3</y>
+        <width>201</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:22px;font-weight:bold;color:#a3123f;background:transparent;border:none;</string>
+      </property>
+      <property name="text">
+       <string>0 VND</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="groupStats">
+    <property name="geometry">
+     <rect>
+      <x>512</x>
+      <y>274</y>
+      <width>370</width>
+      <height>218</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#groupStats{background:#faf9f5;border:1px solid #cdd3c1;border-radius:7px;}</string>
+    </property>
+    <widget class="QLabel" name="statsBand">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>368</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#statsBand{background:#eaede1;border:none;border-top-left-radius:6px;border-top-right-radius:6px;padding-left:13px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:17px;font-weight:bold;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>3. Sales statistics</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dalatSoldLabel">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>41</y>
+       <width>160</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Da Lat flowers sold:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="dalatSoldEdit">
+     <property name="geometry">
+      <rect>
+       <x>188</x>
+       <y>41</y>
+       <width>163</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{background:#f9f3f3;border:1px solid #e0dad8;border-radius:3px;padding:0 6px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dalatValueLabel">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>67</y>
+       <width>160</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Total value:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="dalatValueEdit">
+     <property name="geometry">
+      <rect>
+       <x>188</x>
+       <y>68</y>
+       <width>163</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{background:#f9f3f3;border:1px solid #e0dad8;border-radius:3px;padding:0 6px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>0 VND</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="divider3a">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>348</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#divider3a{background:#9faaa0;border:none;}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sapaSoldLabel">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>108</y>
+       <width>160</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Sapa flowers sold:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sapaSoldEdit">
+     <property name="geometry">
+      <rect>
+       <x>188</x>
+       <y>108</y>
+       <width>163</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{background:#f9f3f3;border:1px solid #e0dad8;border-radius:3px;padding:0 6px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sapaValueLabel">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>133</y>
+       <width>160</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;font-weight:normal;color:#14121f;</string>
+     </property>
+     <property name="text">
+      <string>Total value:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sapaValueEdit">
+     <property name="geometry">
+      <rect>
+       <x>188</x>
+       <y>134</y>
+       <width>163</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{background:#f9f3f3;border:1px solid #e0dad8;border-radius:3px;padding:0 6px;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:14px;color:#14121f;}</string>
+     </property>
+     <property name="text">
+      <string>0 VND</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="divider3b">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>164</y>
+       <width>348</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#divider3b{background:#8c9a91;border:none;}</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="revenueFrame">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>171</y>
+       <width>352</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#revenueFrame{background:#e4eadb;border:1px solid #d3dcc6;border-radius:6px;}</string>
+     </property>
+     <widget class="QLabel" name="revenueTitle">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>5</y>
+        <width>125</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:16px;font-weight:bold;color:#1f5a1f;background:transparent;border:none;</string>
+      </property>
+      <property name="text">
+       <string>Total revenue:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="totalRevenueLabel">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>3</y>
+        <width>201</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:22px;font-weight:bold;color:#1f5a1f;background:transparent;border:none;</string>
+      </property>
+      <property name="text">
+       <string>0 VND</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="calculateButton">
+    <property name="geometry">
+     <rect>
+      <x>24</x>
+      <y>419</y>
+      <width>151</width>
+      <height>69</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:#f9c9db;border:1px solid #bf6f8d;border-radius:9px;color:#3a0a1c;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:15px;font-weight:600;}QPushButton:hover{background:#f6b9d1;}QPushButton:pressed{background:#f0a6c4;}</string>
+    </property>
+    <property name="text">
+     <string>  Calculate</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../images/q2_ic_calc.png</normaloff>../images/q2_ic_calc.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>34</width>
+      <height>34</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearButton">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>419</y>
+      <width>151</width>
+      <height>69</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:#d5d8f3;border:1px solid #6e79c0;border-radius:9px;color:#1b1a3a;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:15px;font-weight:600;}QPushButton:hover{background:#c6caee;}QPushButton:pressed{background:#b6bbe7;}</string>
+    </property>
+    <property name="text">
+     <string>  Clear</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../images/q2_ic_clear.png</normaloff>../images/q2_ic_clear.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>34</width>
+      <height>34</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>346</x>
+      <y>419</y>
+      <width>156</width>
+      <height>69</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:#eaeaea;border:1px solid #c3c3c6;border-radius:9px;color:#1c1c2a;font-family:'Segoe UI','Source Sans 3','Noto Sans','Helvetica Neue',Arial;font-size:15px;font-weight:600;}QPushButton:hover{background:#dedede;}QPushButton:pressed{background:#d0d0d0;}</string>
+    </property>
+    <property name="text">
+     <string>  Close</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../images/q2_ic_close.png</normaloff>../images/q2_ic_close.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>34</width>
+      <height>34</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="footerLabel">
+    <property name="geometry">
+     <rect>
+      <x>22</x>
+      <y>495</y>
+      <width>859</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;</string>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/q2_footer.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
